@@ -1,0 +1,97 @@
+*:root{
+  --primary: #C2B4A0;
+  --text: #212529;
+  --background: #FFFAE7;
+  --accent: #E3CB8A;
+}
+body, html{
+  height: 100%;
+  font-family: "Libre Baskerville";
+  text-align: center;
+}
+nav{
+  padding: 1%;
+  position: fixed;
+  background-color: var(--primary);
+  width: 100%;
+  z-index: 2;
+}
+nav a{
+  text-decoration: none;
+  color: var(--text);
+  margin-left: 1%;
+}
+nav a:hover{
+  color: var(--accent);
+}
+footer{
+  background-color: var(--primary);
+  font-size: 0.9rem;
+  padding: 0.4%;
+}
+#brand{
+  font-size: 1.3rem;
+}
+#clock-page{
+  background-image: url("background.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#clock{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-60%);
+  max-width: 35%;
+  max-height: 30%;
+}
+#clock h1{
+  font-size: 10rem;
+}
+#clock h1, #bottom-time-text{
+  background-color: white;
+  padding: 2%;
+  box-shadow: 0px 0px 15px black;
+  border-radius: 2px;
+  word-wrap: break-word;
+}
+#description{
+  background-color: white;
+  padding: 3%;
+  text-align: justify;
+}
+#description h4{
+  font-weight: bold;
+  text-align: center;
+}
+.finalButton {
+  color: var(--text);
+  background-color: #C2B4A0;
+  padding: 2%;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+}
+.finalButton:hover {
+   background: #897C6A;
+   color: var(--text) !important;
+}
+@media (max-width: 1080px){
+  nav{
+    padding: 3%;
+  }
+  #clock{
+    max-width: 90%;
+  }
+  #clock h1{
+    font-size: 7.5rem;
+  }
+  #bottom-time-text{
+    font-size: 2rem;
+  }
+  #description .col-sm-4{
+    margin-top: 4%;
+  }
+}

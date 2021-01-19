@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Zegar dnia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a7a925725e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body onload="updateClock(); setInterval('updateClock()', 1000 )">
+    <nav>
+      <a href="#description" style="margin-left:0;">Co to znaczy?</a>
+      <a id="brand" href="#clock-page">Zegar dnia</a>
+      <a href="#description">Co to znaczy?</a>
+    </nav>
+    <div id="clock-page">
+      <div id="clock">
+        <h1 id="insert-time"></h1>
+        <br><h2><span id="bottom-time-text">...sekund do końca dnia!</span></h2>
+      </div>
+    </div>
+    <div id="description">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h4><i class="far fa-clock"></i> 24 godziny</h4>
+            <p>Każdego dnia twój czas jest ograniczony. Płynie on nieubłaganie, sekundy zamieniają się w minuty, a minuty w godziny.
+              Nie istnieje żaden sposób, aby czas zatrzymać. Nigdy nie odzyskamy chwil, które upłynęły. Z tego powodu należy
+              zastanowić jak wykorzystujemy nasz czas. Czy bylibyśmy w stanie lepiej go zagospodarować?
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <h4><i class="far fa-clock"></i> 1440 minut</h4>
+            <p>Ile czasu poświęcasz w ciągu dnia na rzeczy naprawdę istotne?
+              Jaka część tego czasu to faktyczne działanie, w którym skupiasz się wyłącznie na konkretnym priorytecie?</li>
+              Ile twojego czasu pochłaniają nieproduktywne czynności?
+              Jaką część twojego życia stanowią zmarnowane chwile?
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <h4><i class="far fa-clock"></i> 86 400 sekund</h4>
+            <p>A co jeśli przestałbyś marnować długie chwile na bezcelowym przeglądaniu social media, odpisywaniu na niezasadne maile,
+              oglądaniu nieciekawych filmów czy leżeniu na kanapie bez celu? Co jeśli myśląc o tym, że dzień składa się z ograniczonej
+              ilość godzin, minut i sekund, byłbyś w stanie wykorzystać ten czas by zrobić coś, co zaowocuje w przyszłości?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--<div>
+      <a href="#clock-page" class="finalButton">Przestań marnować czas!</a>
+    </div>!-->
+    <footer>&copy; Eryk Chojnacki 2021<br>Wszelkie prawa zastrzeżone</footer>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
