@@ -88,10 +88,19 @@ footer{
   #clock{
     max-width: 90%;
   }
+  #clock h1{
+    font-size: 14rem;
+  }
   #bottom-time-text{
-    font-size: 3rem;
+    font-size: 4rem;
   }
   #description .col-sm-4{
     margin-top: 4%;
+  }
+  #description h4{
+    font-size: 3rem;
+  }
+  description p{
+    font-size: 2rem;
   }
 }
